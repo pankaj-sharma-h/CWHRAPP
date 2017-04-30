@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="HRAPP_PU" transaction-type="RESOURCE_LOCAL">
+		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+		<class>com.HRAPP.entity.CompetencyDo</class>
+		<class>com.HRAPP.entity.RatingDo</class>
+		<class>com.HRAPP.entity.RatingMapKey</class>
+		<class>com.HRAPP.entity.RatingScaleDo</class>
+		<class>com.HRAPP.entity.RatingScaleMappingDo</class>
+		<class>com.HRAPP.entity.SequenceDo</class>
+		<class>com.HRAPP.entity.UserDo</class>
+		<properties>
+			<property name="eclipselink.ddl-generation" value="create-tables"/>
+			<property name = "javax.persistence.jdbc.driver" value = "com.sap.db.jdbc.Driver" />
+         	<property name = "javax.persistence.jdbc.url" value = "jdbc:sap://10.117.96.123:30302/" />
+         	<property name = "javax.persistence.jdbc.user" value = "SYSTEM" />
+         	<property name = "javax.persistence.jdbc.password" value = "Incture123" />
+		</properties>
+	</persistence-unit>
+</persistence>
